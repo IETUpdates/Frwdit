@@ -14,7 +14,7 @@ async def start(client, message):
         InlineKeyboardButton('📜 Support Group', url='https://t.me/IET_SUPPORT'),
         InlineKeyboardButton('Update Channel ♻️', url='https://t.me/IET_UPDATES')
     ],[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/IETUpdates/Frwdit')
+        InlineKeyboardButton('SouceCode 💡', url='https://t.me/IET_Owner/721')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -39,7 +39,7 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/IETUpdates/Frwdit'),
+        InlineKeyboardButton('💡 SouceCode', url='https://t.me/IET_Owner/721'),
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
